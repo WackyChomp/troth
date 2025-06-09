@@ -21,3 +21,20 @@ body {
     @apply w-full h-full bg-red-400 pt-12 lg:pt-10;
   }
 }
+
+.link-logo{
+  @apply border-red-700 flex items-center gap-1.5 py-10 border-b;
+  h1{
+    @apply text-blue-800 text-base md:text-2xl font-bold;
+  }
+}
+
+.nav_items{
+  @apply flex flex-col px-6 h-full;
+  .container{
+    @apply flex flex-col justify-between h-full;
+    nav{
+      @apply flex flex-col gap-3.5 pt-9;
+    }
+  }
+}
