@@ -5,18 +5,19 @@ import { cn } from '~/lib/utils';
 
 const NavItems = () => {
   const logoutIcon = `data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxvZy1vdXQtaWNvbiBsdWNpZGUtbG9nLW91dCI+PHBhdGggZD0ibTE2IDE3IDUtNS01LTUiLz48cGF0aCBkPSJNMjEgMTJIOSIvPjxwYXRoIGQ9Ik05IDIxSDVhMiAyIDAgMCAxLTItMlY1YTIgMiAwIDAgMSAyLTJoNCIvPjwvc3ZnPg==`
-
+  const farmIcon = `data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWZhcm0taWNvbiBsdWNpZGUtZmFybSI+PHBhdGggZD0iTTggMTRWNC41YTIuNSAyLjUgMCAwIDAtNSAwVjE0Ii8+PHBhdGggZD0ibTggOCA2LTUgOCA2Ii8+PHBhdGggZD0iTTIwIDR2MTAiLz48cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiB4PSIxMiIgeT0iMTAiLz48cGF0aCBkPSJNMiAxNGgyMCIvPjxwYXRoIGQ9Im0yIDIyIDUtOCIvPjxwYXRoIGQ9Im03IDIyIDUtOCIvPjxwYXRoIGQ9Ik0yMiAyMkgxMmw1LTgiLz48cGF0aCBkPSJNMTUgMThoNyIvPjwvc3ZnPg==`
+  const arrow_right_icon = `data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFycm93LXJpZ2h0LWljb24gbHVjaWRlLWFycm93LXJpZ2h0Ij48cGF0aCBkPSJNNSAxMmgxNCIvPjxwYXRoIGQ9Im0xMiA1IDcgNy03IDciLz48L3N2Zz4=`
+  
   const exampleUser ={
     name: 'George',
     email: 'foundingfather1@gmail.com',
     imgUrl: `https://cdn.britannica.com/43/173043-050-957816CE/oil-George-Washington-canvas-Gilbert-Stuart-Washington.jpg?w=400&h=300&c=crop`
   }
 
-  const arrow_right_icon = `data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFycm93LXJpZ2h0LWljb24gbHVjaWRlLWFycm93LXJpZ2h0Ij48cGF0aCBkPSJNNSAxMmgxNCIvPjxwYXRoIGQ9Im0xMiA1IDcgNy03IDciLz48L3N2Zz4=`
   return (
     <section className='nav_items'>
       <Link to='/' className='link_logo'>
-        <img src={arrow_right_icon} alt="" className='size-[30px]'/>
+        <img src={farmIcon} alt="" className='size-8'/>
         <h1>TROTH</h1>
       </Link>
 
@@ -45,7 +46,7 @@ const NavItems = () => {
             <img src={logoutIcon} alt="logout" className='size-6' />
           </button>
         </footer>
-        
+
       </div>
     </section>
   )

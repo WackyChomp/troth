@@ -19,6 +19,13 @@ body {
   .nav-item {
     @apply flex items-center text-xs md:text-lg font-normal cursor-pointer gap-2.5 py-[18px] px-3.5 rounded-lg text-blue-700 hover:bg-yellow-400 hover:text-white;
   }
+
+  .wrapper {
+    @apply w-full max-w-7xl mx-auto px-4 lg:px-8;
+  }
+  .wrapper-md {
+    @apply w-full max-w-3xl px-4 lg:px-8 mx-auto;
+  }
 }
 
 
@@ -33,17 +40,30 @@ body {
     }
   }
 
-  .link-logo{
-    @apply border-red-700 flex items-center gap-1.5 py-10 border-b;
+  .link_logo{
+    @apply bg-red-400 border-red-700 flex items-center gap-1.5 py-10 border-b;
     h1{
-      @apply text-blue-800 text-base md:text-2xl font-bold;
+      @apply text-blue-800 text-base md:text-4xl font-bold;
+    }
+  }
+
+  .mobile_sidebar {
+    @apply lg:hidden flex flex-col gap-5;
+    header {
+      @apply flex justify-between items-center border-b border-yellow-300;
+      h1 {
+        @apply text-base md:text-2xl font-bold text-green-800;
+      }
+      a {
+        @apply flex items-center gap-1.5 py-10;
+      }
     }
   }
 
   .nav_items{
-    @apply flex flex-col px-6 h-full;
+    @apply bg-green-500 flex flex-col px-6 h-full;
     .container{
-      @apply flex flex-col justify-between h-full;
+      @apply bg-amber-600 flex flex-col justify-between h-full;
       nav{
         @apply flex flex-col gap-3.5 pt-9;
       }
