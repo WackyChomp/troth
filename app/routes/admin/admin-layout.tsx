@@ -6,7 +6,7 @@ import { NavItems } from 'components'
 const adminLayout = () => {
   return (
     <div className='admin_layout'>I am the admin-layout
-      <aside className='bg-amber-300 w-full max-w-[200px] hidden lg:block'>
+      <aside className='bg-amber-300 w-full max-w-[300px] hidden lg:block'>
         <SidebarComponent width='270px' enableGestures={false}>
           <NavItems />
         </SidebarComponent>
