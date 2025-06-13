@@ -10,6 +10,9 @@ const MobileSidebar = () => {
   const menuIcon = `data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1lbnUtaWNvbiBsdWNpZGUtbWVudSI+PHBhdGggZD0iTTQgMTJoMTYiLz48cGF0aCBkPSJNNCAxOGgxNiIvPjxwYXRoIGQ9Ik00IDZoMTYiLz48L3N2Zz4=`;
 
   let sidebar: SidebarComponent;
+  const toggleSidebar = () => {
+    sidebar.toggle()
+  }
 
   return (
     <div className='mobile_sidebar wrapper'>
@@ -26,12 +29,12 @@ const MobileSidebar = () => {
 
       <SidebarComponent 
         width={270} 
-        ref={Sidebar = sidebar}
+        ref={(Sidebar) => sidebar = Sidebar}
         created={() => sidebar.hide()} 
         closeOnDocumentClickt={true} 
         showBackdrop={true} type='over'
       >
-        <NavItems />
+        <NavItems handleClick={toggleSidebar} />
       </SidebarComponent>
     </div>
   )
