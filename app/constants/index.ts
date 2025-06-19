@@ -1,3 +1,5 @@
+import {formatDate} from "~/lib/utils";
+
 export const sidebarItems = [
   {
     id: 1,
@@ -19,3 +21,34 @@ export const sidebarItems = [
   },
 ];
 
+
+
+export const users = [
+  {
+    id: 1,
+    name: "John Doe",
+    email: "john.doe@example.com",
+    imageUrl: "https://static.wikia.nocookie.net/worldwrestlingentertainment2177/images/a/ad/John_Cena_2.png/revision/latest?cb=20230920001153",
+    dateJoined: formatDate("2025-01-11"),
+    itineraryCreated: 2,
+    status: "user",
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    email: "jane.smith@example.com",
+    imageUrl: "https://static.wikia.nocookie.net/breakingbad/images/b/bd/Cast_bb_800x600_jane-margolis.jpg/revision/latest?cb=20200722114556",
+    dateJoined: formatDate("2025-03-17"),
+    itineraryCreated: 7,
+    status: "user",
+  },
+  {
+    id: 3,
+    name: "Jack Smith",
+    email: "jack.smith@example.com",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Raiden_Metal_Gear_Rising.webp/200px-Raiden_Metal_Gear_Rising.webp.png",
+    dateJoined: formatDate("2025-07-23"),
+    itineraryCreated: 14,
+    status: "admin",
+  },
+];
