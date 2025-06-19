@@ -21,7 +21,13 @@ export const sidebarItems = [
   },
 ];
 
-
+export const dashboardStats = {
+  totalUsers: 140,
+  usersJoined: { currentMonth: 17, lastMonth: 14},
+  totalTreks: 237,
+  treksCreated: { currentMonth: 13, lastMonth: 71},
+  userRole: { total: 88, currentMonth: 13, lastMonth: 21}
+}
 
 export const users = [
   {
@@ -51,4 +57,118 @@ export const users = [
     itineraryCreated: 14,
     status: "admin",
   },
+];
+
+
+export const allTreks = [
+  {
+    id: 1,
+    name: "Eiffel Tower",
+    imageUrls: ["https://www.pexels.com/photo/the-eiffel-tower-in-full-shot-photography-5101955/"],
+    itinerary: [{ location: "Paris" }],
+    tags: ["Culture", "Architecture", "Photography"],
+    travelStyle: "Guided Tour",
+    entryTicketPrice: "$45",
+    planeTicketPrice: "$850",
+    estimatedPrice: "$895"
+  },
+  {
+    id: 2,
+    name: "Great Wall of China",
+    imageUrls: ["https://images.pexels.com/photos/10363510/pexels-photo-10363510.jpeg"],
+    itinerary: [{ location: "Beijing" }],
+    tags: ["History", "Adventure", "Hiking"],
+    travelStyle: "Group",
+    entryTicketPrice: "$120",
+    planeTicketPrice: "$900",
+    estimatedPrice: "$1,020"
+  },
+  {
+    id: 3,
+    name: "Christ the Redeemer",
+    imageUrls: ["https://www.pexels.com/photo/christ-the-redeemer-2868242/"],
+    itinerary: [{ location: "Rio de Janeiro" }],
+    tags: ["Landmark", "Spiritual", "Scenic"],
+    travelStyle: "Guided Tour",
+    entryTicketPrice: "$23",
+    planeTicketPrice: "$950",
+    estimatedPrice: "$973"
+  },
+  {
+    id: 4,
+    name: "Statue of Liberty",
+    imageUrls: ["https://www.pexels.com/photo/statue-of-liberty-887848/"],
+    itinerary: [{ location: "New York City" }],
+    tags: ["Iconic", "Culture", "Views"],
+    travelStyle: "Group",
+    entryTicketPrice: "$25",
+    planeTicketPrice: "$0",
+    estimatedPrice: "$25"
+  },
+  {
+    id: 5,
+    name: "Colosseum",
+    imageUrls: ["https://www.pexels.com/photo/colosseum-rome-851646/"],
+    itinerary: [{ location: "Rome" }],
+    tags: ["Ancient", "Architecture", "History"],
+    travelStyle: "Guided Tour",
+    entryTicketPrice: "$55",
+    planeTicketPrice: "$875",
+    estimatedPrice: "$930"
+  },
+  {
+    id: 6,
+    name: "Sydney Opera House",
+    imageUrls: ["https://www.pexels.com/photo/sydney-opera-house-australia-1878293/"],
+    itinerary: [{ location: "Sydney" }],
+    tags: ["Culture", "Architecture", "Events"],
+    travelStyle: "Solo",
+    entryTicketPrice: "$29",
+    planeTicketPrice: "$1,200",
+    estimatedPrice: "$1,229"
+  },
+  {
+    id: 7,
+    name: "Taj Mahal",
+    imageUrls: ["https://www.pexels.com/photo/taj-mahal-in-bright-sunny-3224533/"],
+    itinerary: [{ location: "Agra" }],
+    tags: ["Romantic", "Heritage", "Photography"],
+    travelStyle: "Guided Tour",
+    entryTicketPrice: "$15",
+    planeTicketPrice: "$1,100",
+    estimatedPrice: "$1,115"
+  },
+  {
+    id: 8,
+    name: "Santorini Caldera",
+    imageUrls: ["https://www.pexels.com/photo/caldera-seen-from-santorini-17919743/"],
+    itinerary: [{ location: "Santorini" }],
+    tags: ["Scenic", "Relaxation", "Culture"],
+    travelStyle: "Group",
+    entryTicketPrice: "$38",
+    planeTicketPrice: "$900",
+    estimatedPrice: "$938"
+  },
+  {
+    id: 9,
+    name: "Machu Picchu",
+    imageUrls: ["https://www.pexels.com/photo/machu-picchu-on-mountain-in-peru-11064169/"],
+    itinerary: [{ location: "Cusco" }],
+    tags: ["Adventure", "Hiking", "Mystery"],
+    travelStyle: "Guided Tour",
+    entryTicketPrice: "$45",
+    planeTicketPrice: "$1,000",
+    estimatedPrice: "$1,045"
+  },
+  {
+    id: 10,
+    name: "Big Ben",
+    imageUrls: ["https://www.pexels.com/photo/big-ben-london-night-photography-635611/"],
+    itinerary: [{ location: "London" }],
+    tags: ["Historical", "Architecture", "Iconic"],
+    travelStyle: "Solo",
+    entryTicketPrice: "$45",
+    planeTicketPrice: "$850",
+    estimatedPrice: "$895"
+  }
 ];

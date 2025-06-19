@@ -1,19 +1,11 @@
 import React from 'react'
 import { Header, StatsCard }  from '../../../components'
+import { dashboardStats, users } from '~/constants'
+
+const { totalUsers, usersJoined, totalTreks, treksCreated, userRole } = dashboardStats     // destructured
 
 const dashboard = () => {
-
-  {/* Mock Data */}
-  const user = {name: 'Joker'}
-  const dashboardStats = {
-    totalUsers: 140,
-    usersJoined: { currentMonth: 17, lastMonth: 14},
-    totalTreks: 237,
-    treksCreated: { currentMonth: 13, lastMonth: 71},
-    userRole: { total: 88, currentMonth: 13, lastMonth: 21}
-  }
-  const { totalUsers, usersJoined, totalTreks, treksCreated, userRole } = dashboardStats
-
+  const user = {name: 'Joker'}      // Mock Data
 
   return (
     <main className='dashboard wrapper'>
