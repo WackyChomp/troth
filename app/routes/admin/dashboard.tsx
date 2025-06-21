@@ -1,6 +1,7 @@
 import React from 'react'
 import { Header, StatsCard }  from '../../../components'
-import { dashboardStats, users } from '~/constants'
+import { allTreks, dashboardStats, users } from '~/constants'
+import TrekCard from 'components/TrekCard'
 
 const { totalUsers, usersJoined, totalTreks, treksCreated, userRole } = dashboardStats     // destructured
 
@@ -36,6 +37,24 @@ const dashboard = () => {
             currentMonthCount={userRole.currentMonth}
             lastMonthCount={userRole.lastMonth}
           />
+        </div>
+      </section>
+
+      
+      <section className="container">
+        <h1 className='text-xl font-semibold text-orange-700'>Created Treks</h1>
+        <div className="trek_grid">
+          {allTreks.slice(0, 10).map(({ id, name, imageUrls, itinerary, tags, estimatedPrice }) => (
+            <TrekCard 
+              key={id}
+              id={id.toString()}
+              name={name}
+              imageUrls={imageUrls[0]}
+              location={itinerary?.[0]?.location ?? ''}
+              tags={tags}
+              price={estimatedPrice}
+            />
+          ))}
         </div>
       </section>
     </main>

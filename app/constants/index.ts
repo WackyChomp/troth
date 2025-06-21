@@ -64,7 +64,7 @@ export const allTreks = [
   {
     id: 1,
     name: "Eiffel Tower",
-    imageUrls: ["https://www.pexels.com/photo/the-eiffel-tower-in-full-shot-photography-5101955/"],
+    imageUrls: ["https://images.pexels.com/photos/5101955/pexels-photo-5101955.jpeg"],
     itinerary: [{ location: "Paris" }],
     tags: ["Culture", "Architecture", "Photography"],
     travelStyle: "Guided Tour",
@@ -86,7 +86,7 @@ export const allTreks = [
   {
     id: 3,
     name: "Christ the Redeemer",
-    imageUrls: ["https://www.pexels.com/photo/christ-the-redeemer-2868242/"],
+    imageUrls: ["https://images.pexels.com/photos/2868242/pexels-photo-2868242.jpeg"],
     itinerary: [{ location: "Rio de Janeiro" }],
     tags: ["Landmark", "Spiritual", "Scenic"],
     travelStyle: "Guided Tour",
@@ -97,7 +97,7 @@ export const allTreks = [
   {
     id: 4,
     name: "Statue of Liberty",
-    imageUrls: ["https://www.pexels.com/photo/statue-of-liberty-887848/"],
+    imageUrls: ["https://images.pexels.com/photos/887848/pexels-photo-887848.jpeg"],
     itinerary: [{ location: "New York City" }],
     tags: ["Iconic", "Culture", "Views"],
     travelStyle: "Group",
@@ -108,7 +108,7 @@ export const allTreks = [
   {
     id: 5,
     name: "Colosseum",
-    imageUrls: ["https://www.pexels.com/photo/colosseum-rome-851646/"],
+    imageUrls: ["https://images.pexels.com/photos/851646/pexels-photo-851646.jpeg"],
     itinerary: [{ location: "Rome" }],
     tags: ["Ancient", "Architecture", "History"],
     travelStyle: "Guided Tour",
@@ -130,7 +130,7 @@ export const allTreks = [
   {
     id: 7,
     name: "Taj Mahal",
-    imageUrls: ["https://www.pexels.com/photo/taj-mahal-in-bright-sunny-3224533/"],
+    imageUrls: ["https://images.pexels.com/photos/3224533/pexels-photo-3224533.jpeg"],
     itinerary: [{ location: "Agra" }],
     tags: ["Romantic", "Heritage", "Photography"],
     travelStyle: "Guided Tour",
@@ -141,7 +141,7 @@ export const allTreks = [
   {
     id: 8,
     name: "Santorini Caldera",
-    imageUrls: ["https://www.pexels.com/photo/caldera-seen-from-santorini-17919743/"],
+    imageUrls: ["https://images.pexels.com/photos/17919743/pexels-photo-17919743.jpeg"],
     itinerary: [{ location: "Santorini" }],
     tags: ["Scenic", "Relaxation", "Culture"],
     travelStyle: "Group",
@@ -152,7 +152,7 @@ export const allTreks = [
   {
     id: 9,
     name: "Machu Picchu",
-    imageUrls: ["https://www.pexels.com/photo/machu-picchu-on-mountain-in-peru-11064169/"],
+    imageUrls: ["https://images.pexels.com/photos/11064169/pexels-photo-11064169.jpeg"],
     itinerary: [{ location: "Cusco" }],
     tags: ["Adventure", "Hiking", "Mystery"],
     travelStyle: "Guided Tour",
@@ -163,7 +163,7 @@ export const allTreks = [
   {
     id: 10,
     name: "Big Ben",
-    imageUrls: ["https://www.pexels.com/photo/big-ben-london-night-photography-635611/"],
+    imageUrls: ["https://images.pexels.com/photos/635611/pexels-photo-635611.jpeg"],
     itinerary: [{ location: "London" }],
     tags: ["Historical", "Architecture", "Iconic"],
     travelStyle: "Solo",
