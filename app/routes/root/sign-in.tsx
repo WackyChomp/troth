@@ -1,5 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link, redirect } from 'react-router'
+import { loginWithGoogle } from '~/appwrite/auth'
+import { account } from '~/appwrite/client';
+
+// export async function clientLoader(){
+//   try{
+//     const user = await account.get();
+//     if(!user.$id) return redirect('/');
+//   }catch(error){
+//     console.log('Error fetching user', error)
+//   }
+// }
 
 const signIn = () => {
   return (
@@ -17,7 +28,7 @@ const signIn = () => {
               <p className='text-sm text-center !leading-6'>Sign in with Google to manage your treks and activity seamlessly</p>
             </article>
 
-            <button className='bg-blue-400'>
+            <button className='bg-blue-400' onClick={loginWithGoogle}>
               <img src='https://img.icons8.com/ios/50/google-logo--v1.png' alt="Google Icon" className='size-7' />
               <span className='text-sm font-semibold'>Sign in with Google</span>
             </button>
