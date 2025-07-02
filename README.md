@@ -51,6 +51,7 @@ List of incredible resources that give you inspiration or point you into a direc
 <br><br>
 * [Vite](https://vite.dev/) - Frontend build tool
 * [Tailwind CSS](https://tailwindcss.com/docs/installation) - CSS framework
+* [Sentry](https://docs.sentry.io/) - App Monitoring & Error Tracking
 <!--
 * []() - 
 -->
