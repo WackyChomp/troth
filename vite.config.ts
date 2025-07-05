@@ -10,7 +10,7 @@ const sentryConfig: SentryReactRouterBuildOptions = {
   project: "troth_dashboard",
 
   // An auth token is required for uploading source maps.
-  authToken: "GENERATE DO NOT COMMIT"
+  authToken: "UNFORTUNATELY NEED TO MANUALLY SWITCH TO GET SENTRY WORKING"
   // ...
 };
 

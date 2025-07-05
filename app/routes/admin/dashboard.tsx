@@ -5,6 +5,13 @@ import TrekCard from 'components/TrekCard'
 
 const { totalUsers, usersJoined, totalTreks, treksCreated, userRole } = dashboardStats     // destructured
 
+
+// // Test out Sentry to see if it works
+// export async function loader() {
+//   throw new Error("some error thrown in a loader");
+// }
+
+
 const dashboard = () => {
   const user = {name: 'Joker'}      // Mock Data
 

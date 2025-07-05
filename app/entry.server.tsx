@@ -1,6 +1,8 @@
+import './instrument.server';         
+// Needed b/c unable to change script in package.json ---- https://docs.sentry.io/platforms/javascript/guides/react-router/#update-scripts
+
 import * as Sentry from '@sentry/react-router';
 import { PassThrough } from "node:stream";
-
 import type { AppLoadContext, EntryContext, HandleErrorFunction } from "react-router";
 import { getMetaTagTransformer, wrapSentryHandleRequest } from "@sentry/react-router";
 import { createReadableStreamFromReadable } from "@react-router/node";
