@@ -24,6 +24,16 @@
 <br />
 
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#"></a></li>
+  </ol>
+</details>
+
 ### Built With
 
 This section includes a list major frameworks/libraries used in this project:
