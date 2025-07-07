@@ -59,6 +59,12 @@ export const users = [
   },
 ];
 
+declare interface UserData extends BaseUser{
+  itineraryCreated: number | string;
+  status: 'user' | 'admin';
+}
+declare type User = BaseUser;
+
 
 export const allTreks = [
   {
