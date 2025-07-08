@@ -4,7 +4,18 @@ import { ColumnDirective, ColumnsDirective, GridComponent } from '@syncfusion/ej
 import { users } from '~/constants'
 import { cn } from '~/lib/utils'
 
-const allUsers = () => {
+import { getAllUsers } from '~/appwrite/auth'
+import type { Route } from './+types/all-users'
+
+
+//fetch data before page loads
+export const loader  = async () => {
+  const { users, total } = await getAllUsers(10, 0)     // limit , offset
+  return {}
+}
+
+
+const allUsers = ({ loaderData }: Route.ComponentProps) => {
   return (
     <div className="bg-blue-300 all_users wrapper">
       <Header 

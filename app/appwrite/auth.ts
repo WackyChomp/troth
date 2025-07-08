@@ -1,6 +1,7 @@
 import { ID, OAuthProvider, Query } from "appwrite"
 import { appwriteConfig, account, database } from "./client"
 import { redirect } from "react-router"
+import { Q } from "node_modules/react-router/dist/development/lib-C1JSsICm.mjs"
 
 export const loginWithGoogle = async() => {
   try {
@@ -124,3 +125,22 @@ export const getExistingUser = async (id: string) => {
     return null;
   }
 };
+
+
+// used in all-users component
+export const getAllUsers = async (limit:number, offset:number) => {
+  try {
+    const { documents:users, total} = await database.listDocuments(
+      appwriteConfig.databaseId,
+      appwriteConfig.userCollectionId,
+      [Query.limit(limit), Query.offset(offset)]
+    )
+
+    if (total === 0) return { users:[], total };
+    return { users, total};
+
+  } catch (error) {
+    console.log('Error fetching all users', error)
+    return { users: [], total: 0}
+  }
+}
